@@ -1,67 +1,36 @@
 <!DOCTYPE html>
+
 <html>
-    <head>
-<meta charset="utf-8">
-<title>Display Webcam Stream</title>
- 
-<style>
-#container {
-	margin: 0px auto;
-	width: 500px;
-	height: 375px;
-	border: 10px #333 solid;
-}
-#videoElement {
-	width: 500px;
-	height: 375px;
-	background-color: #666;
-}
-</style>
-</head>
-<body>
-<div id="container">
-	<video autoplay="true" id="videoElement">
-	    
-	
-	</video>
-</div>
+    <title>Welcome tos Homepage!</title>
+    <style>
+        body{
+            background-color: blue;
+            font:Garamond;
+            color: yellow;
+        }
+        .profilepic {
+            width:200px ;
+        }
+        li {
+            font-size:32px;
+        }
+        
+    </style>
+    
+    <body>
+        
+        <h1>Welcome to my homepage!!</h1>
+        <h1>Week 1, release 1</h1>
 
-<body>
+        <h2>Hi my name is Jb
+            You can contact me at...</h2>
+        <ul>
+            <li>tristinkolby@gmail.com</li>
+            <li>trikolby01@spectrumhighschool.org</li>
+        </ul>
+        <h2>More content being added weekly!!!</h2>
 
-<h2>THIS IS YOU</h2>
-
-
-<button onclick="getLocation()">CLICK FOR YOU</button>
-
-<p id="demo"></p>
-
-<script>
-var video = document.querySelector("#videoElement");
-
-if (navigator.mediaDevices.getUserMedia) {
-  navigator.mediaDevices.getUserMedia({ video: true })
-    .then(function (stream) {
-      video.srcObject = stream;
-    })
-    .catch(function (err0r) {
-      console.log("Something went wrong!");
-    });
-}
-const x = document.getElementById("demo");
-
-function getLocation() {
-  try {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } catch {
-    x.innerHTML = err;
-  }
-}
-
-function showPosition(position) {
-  x.innerHTML = "Latitude: " + position.coords.latitude + 
-  "<br>Longitude: " + position.coords.longitude + "<br>Ip: " + position.coords.ip;
-}
-</script>
-
-</body>
+        
+        
+    </body>    
 </html>
