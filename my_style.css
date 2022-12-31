@@ -1,9 +1,4 @@
-body {
-    margin:0px;
-    padding:0px;
-    background-color:black;
-    color:white;
-}
+
 button {
     height:100px;
     width:400px;
@@ -59,4 +54,128 @@ li {
     filter: blur(0);
     filter: drop-shadow(10px 10px 50px green);
     transform: translateX(0)
+}
+body{
+    margin:0px;
+   `padding:0px;
+    background-color: black;
+    color:white;
+    text-align:center;
+    animation-fill-mode: forwards;
+    animation-name: white, orange, yellow, green, cyan, blue, violet;
+    animation-delay: 0s, 2s, 4s, 6s, 8s, 10s, 12s;
+    animation-duration: 2s; /* same for all */
+    animation-iteration-count: infinite;
+
+        }
+
+    
+@keyframes orange {
+    to { color: orange; }
+}
+@keyframes yellow {
+    to { color: yellow; }
+}
+@keyframes green {
+    to { color: green; }
+}
+@keyframes cyan {
+    to {color: cyan; }
+}
+@keyframes blue {
+    to {color: blue; }
+}
+@keyframes violet {
+    to {color: violet; }
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+}
+hailtp {
+    background-color: green;
+}
+.bg {
+    width: 100%;
+    height: 100vh;
+    background-color:black;
+}
+.glass {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:black;
+    overflow: hidden;
+}
+.glass li {
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background-color:black;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    animation: spin 5s linear infinite;
+    bottom: -150px;
+}
+.glass li:nth-child(1) {
+    left: 35%;
+
+    animation-delay: 0s;
+}
+.glass li:nth-child(2) {
+    left: 10%;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.glass li:nth-child(3) {
+    left: 70%;
+    animation-delay: 4s;
+}
+.glass li:nth-child(4) {
+    left: 40%;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.glass li:nth-child(5) {
+    left: 65%;
+    animation-delay: 0s;
+}
+.glass li:nth-child(6) {
+    left: 75%;
+    animation-delay: 3s;
+}
+.glass li:nth-child(7) {
+    left: 35%;
+    animation-delay: 7s;
+}
+.glass li:nth-child(8) {
+    left: 50%;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+.glass li:nth-child(9) {
+    left: 20%;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+.glass li:nth-child(10) {
+    left: 85%;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+@keyframes spin {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 50;
+        border-radius: 0;
+    }
+    100% {
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 0%;
+    }
 }
