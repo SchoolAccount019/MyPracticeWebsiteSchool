@@ -1,0 +1,49 @@
+html {
+    background:#acadd7;
+    color:black;
+}
+body {
+    
+}
+h1 {
+    padding-top:20px;
+}
+
+* {
+    margin:0;
+}
+
+i {
+    background: -webkit-linear-gradient(blue, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color:#7136A5;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: white;
+  color:purple;
+}
+
+.active {
+  background-color: #A765E1 ;
+}
