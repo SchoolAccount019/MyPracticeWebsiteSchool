@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+html {
+    background:black;
+    color:red;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+* {
+    margin:0;
+    padding:0;
+}
+
+.overlay {
+  height: 100%;
+  position:fixed;
+  width:0;
+  background-color: red;
+    overflow-x: hidden;
+  transition: 1s;
+}
+
+.overlay-content {
+  position: relative;
+  top:25%;
+  width: 100%;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: white;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 0px;
+  right: 35px;
+  }
+}
+#left {
+    text-align:left;
+    margin:20px;
+      font-size: 60px;
+
+}
+#right {
+    text-align:right;
+        margin:20px;
+
+      font-size: 60px;
+
+}
+
+span {
+  position: relative;
+    float: right;
+    color: red;
+}
+</style>
+</head>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="About.html" id = "left">About</a>
+    <a href="Homepage.html" id = "right">Home</a>
+    <a href="Contact.html" id = "left">Contact</a>
+    <a href="index.html" id = "right">Landing Screen</a>
+
+  </div>
+</div>
+
+<span id = "menu" style="font-size:50px; margin:20px; margin-top:0%; margin-left:0px; cursor:pointer" onclick="openNav()">☰</span>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+    document.getElementById("menu").style.display = "none";
+
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+    document.getElementById("menu").style.display = "block";
+
+}
+</script>
+
+
+
+
+
+
+
+
+<body>
+    <h1>I'm just gonna be real I don't know how to style my contact page ngl</h1>
+    <ul>
+        <li>763-400-6878</li>
+        <li>tristinkolby@gmail.com</li>
+    </ul>
+    
+    
+</body>
+
+</html>
