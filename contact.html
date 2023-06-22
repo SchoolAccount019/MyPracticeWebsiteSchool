@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href = "SobrietySucks.css">
+    <script src="contact.js"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("l9D9exkR6sg2ghd9o");
+   })();
+</script>
+</head>
+<body>
+    <section class = "header">
+        <nav>
+            <div class = "logo">
+               
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href = "SobrietySucks.html" class = "home">HOME</a></li>
+                    <li><a href = "CumCremer.html" class = "home">ABOUT</a></li>
+                    <li><a href = "RopeAnime.html" class = "home">HALL OF FAME</a></li>
+                    <li><a href = "" class = "home">CONTACT</a></li>
+                </ul>
+            </div>
+        </nav>
+<style>
+    h1 {
+        background:none;
+    }
+    h4 {
+        background:none;
+    }
+    #red {
+        background:red;
+    }
+
+</style>
+       
+<div class="container border mt-3 bg-light">
+    <div class = "row">
+        <div class="col-md-6 p-5" id = "red">
+            <h1>Hi!</h1>
+            <h4>If you're reading this, you're probably a little interested in me. Feel free to contact me for whatever reason, just fill out the form to the right and I'll talk to you soon!</h4>
+        </div>
+        <div class="col-md-6 py-3">
+                <h1>Contact Me!</h1>
+            <div class="form-group">
+                
+                <h4 for = "name">Name</h4>
+                <input type = "text" class = "form-control" id = "name" placeholder = "What's your name? ">
+            </div>
+
+            <div class="form-group">
+                
+                <h4 for = "email">Email</h4>
+                <input type = "email" class = "form-control" id = "email" placeholder = "Email Please! ">
+            </div>
+
+            <div class="form-group">
+                
+                <h4 for = "message">Message</h4>
+                <textarea id = "message" rows = "3" class = "form-control">
+
+                </textarea>
+            </div>
+            <button class = "btn btn-primary" onclick = "sendEmail()">
+                Submit
+            </button>
+
+        </div>
+    </div>
+</div>
+
+</section>
+
+
+
+</body>
+</html>
