@@ -1,0 +1,155 @@
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+    float:left;
+    font-size:30px;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin:10px;
+  text-decoration: none;
+}
+
+li a:hover {
+    transform:hue-rotate(90deg);
+}
+#mobile {
+  display:none;
+}
+
+#one {
+  background-image: linear-gradient(to left, #D2386C, #00A170);
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+
+#two {
+  background-image: linear-gradient(to right, #D2386C, #00A170);
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+#three {
+  background-image: linear-gradient(to left, #D2386C, #00A170);
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+#four {
+  background-image: linear-gradient(to right, #D2386C, #00A170);
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size:40px;
+  }
+  li {
+    font-size:40px;
+    margin:0px;
+    padding:0px;
+  }
+  #mobile{
+    display:block;
+    background-image: linear-gradient(to left, red, blue);
+    -webkit-background-clip: text;
+    background-clip:text;
+  -webkit-text-fill-color: transparent;
+  }
+  #one {
+    background-image: linear-gradient(to left, red, blue);
+    -webkit-background-clip: text;
+    background-clip:text;
+  -webkit-text-fill-color: transparent;
+  display:none;
+  }
+  #two {
+    background-image: linear-gradient(to left, red, blue);
+    -webkit-background-clip: text;
+    background-clip:text;
+  -webkit-text-fill-color: transparent;
+  display:none;
+  }
+  #three {
+    background-image: linear-gradient(to left, red, blue);
+    -webkit-background-clip: text;
+    background-clip:text;
+  -webkit-text-fill-color: transparent;
+  display:none;
+  }
+  #four {
+    background-image: linear-gradient(to left, red, blue);
+    -webkit-background-clip: text;
+    background-clip:text;
+  -webkit-text-fill-color: transparent;
+  display:none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size:40px;
+  }
+  li {
+    font-size:40px;
+    margin:0px;
+    padding:0px;
+  }
+  #mobile{
+    display:none;
+    background-image: linear-gradient(to left, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  #one {
+  display:block;
+  }
+  #two {
+
+  display:block;
+  }
+  #three {
+
+  display:block;
+  }
+  #four {
+  display:block;
+  }
+}
+
+#nav {
+  z-index:2;
+  position:absolute;
+  margin-bottom:10px;
+}
+
+#close-btn {
+  z-index:3;
+  position:absolute;
+  display:none;
+  top:30px;
+  left:75vw;
+  font-size:40px;
+  color:white;
+  background-image: linear-gradient(to left, red, blue);
+  -webkit-background-clip: text;
+  background-clip:text;
+  -webkit-text-fill-color: transparent;
+}
+
+

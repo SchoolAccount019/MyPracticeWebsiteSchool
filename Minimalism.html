@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+
+
+body {
+    height:100vh;
+        margin:0;
+        background:radial-gradient(circle at bottom, #009999,  #710000);
+        background-repeat:no-repeat;
+ }
+.cum {
+  z-index:1;
+  position:absolute;
+    top:45%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    text-align:center;
+
+}
+h1 {
+    font-size:100px;
+    background-image: linear-gradient(to bottom, #D2386C, #00A170);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+#para {
+    color:white;
+
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+
+li {
+    float:left;
+    font-size:30px;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  margin:10px;
+  text-decoration: none;
+}
+
+li a:hover {
+    transform:hue-rotate(90deg);
+}
+#mobile {
+  display:none;
+}
+
+#one {
+  background-image: linear-gradient(to left, #D2386C, #00A170);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#two {
+  background-image: linear-gradient(to right, #D2386C, #00A170);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#three {
+  background-image: linear-gradient(to left, #D2386C, #00A170);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#four {
+  background-image: linear-gradient(to right, #D2386C, #00A170);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size:40px;
+  }
+  li {
+    font-size:40px;
+    margin:0px;
+    padding:0px;
+  }
+  #mobile{
+    display:block;
+    background-image: linear-gradient(to left, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  #one {
+    background-image: linear-gradient(to left, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display:none;
+  }
+  #two {
+    background-image: linear-gradient(to left, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display:none;
+  }
+  #three {
+    background-image: linear-gradient(to left, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display:none;
+  }
+  #four {
+    background-image: linear-gradient(to left, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display:none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    font-size:40px;
+  }
+  li {
+    font-size:40px;
+    margin:0px;
+    padding:0px;
+  }
+  #mobile{
+    display:none;
+    background-image: linear-gradient(to left, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  }
+  #one {
+  display:block;
+  }
+  #two {
+
+  display:block;
+  }
+  #three {
+
+  display:block;
+  }
+  #four {
+  display:block;
+  }
+}
+
+#nav {
+  z-index:2;
+  position:absolute;
+}
+
+#close-btn {
+  z-index:3;
+  position:absolute;
+  display:none;
+  top:30px;
+  left:75vw;
+  font-size:40px;
+  color:white;
+  background-image: linear-gradient(to left, red, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+</style>
+<script>
+  function openNav() {
+    if (screen.width < 600){
+
+    document.getElementById("nav").style.background = "black";
+    document.getElementById("nav").style.height = "100vh";
+document.getElementById("one").style.display = "block";
+document.getElementById("two").style.display = "block";
+document.getElementById("three").style.display = "block";
+document.getElementById("four").style.display = "block";
+document.getElementById("close-btn").style.display = "block";
+
+}
+if (screen.width > 600) {
+    document.getElementById("mobile").style.display = "none";
+  document.getElementById("one").style.display = "block";
+  document.getElementById("two").style.display = "block";
+  document.getElementById("three").style.display = "block";
+  document.getElementById("four").style.display = "block";
+  document.getElementById("close-btn").style.display = "none";
+  document.getElementById("nav").style.background = "transparent";
+
+
+  }
+
+  }
+  function closeNav() {
+  if (screen.width < 600){
+
+
+  document.getElementById("nav").style.background = "transparent";
+  document.getElementById("nav").style.height = "100vh";
+  document.getElementById("mobile").style.display = "block";
+  document.getElementById("one").style.display = "none";
+  document.getElementById("two").style.display = "none";
+  document.getElementById("three").style.display = "none";
+  document.getElementById("four").style.display = "none";
+  document.getElementById("close-btn").style.display = "none";
+
+  }
+  if (screen.width > 600) {
+    document.getElementById("mobile").style.display = "none";
+  document.getElementById("one").style.display = "block";
+  document.getElementById("two").style.display = "block";
+  document.getElementById("three").style.display = "block";
+  document.getElementById("four").style.display = "block";
+  document.getElementById("close-btn").style.display = "none";
+  document.getElementById("nav").style.background = "transparent";
+
+
+  }
+}
+
+</script>
+
+
+
+
+
+</head>
+
+
+
+
+<body>  
+<!--Open the mobile menu, should only be viewable at small viewports or else I'm fucked. If this doesn't work I'm gonna kms-->
+
+<ul class = "nav" id = "nav">
+  <li id = "mobile"><a href = "#" onclick = "openNav()">&#9776;</a></li>
+    <li id = "one"><a href = "index.html">HOME</a></li>
+    <li id = "two"><a href = "#">ABOUT</a></li>
+    <li id = "three"><a href = "#">PROJECTS</a></li>
+    <li id = "four"><a href = "#">CONTACT</a></li>
+</ul>
+<div id = "close-btn" onclick = "closeNav()">
+  X
+</div>
+<br>
+
+    <div class = "cum">
+        <h1>Tristin C. Kolby</h1>  
+        <p id = "para">Tristin C. Kolby at your service, the latest and greatest in sleek, slick, and sexy web design. </p>
+        <br>
+        <button type = "button" class = "btn btn-outline-info">Learn More </button>
+
+
+    </div>
+       
+</body>
+
+
+</html>
